@@ -1,0 +1,209 @@
+<HTML>
+<HEAD>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+	<link href="content/css/walkspan-api.css?v=1055" rel="stylesheet" />
+</HEAD>
+<BODY>
+
+	<div class="walkspan-left-wrapper">
+		<div class="walkspan-left-panel top-panel">
+			<div class="search-wrapper">
+				<img src="content/images/search.png" />
+				<input type="text" class="wapi-search" placeholder="" />
+			</div>
+			
+			<div id="divWAPISidewalkView" class="wapi-sidewalk-view">
+				<div class="sidewalk-view-header"> Sidewalk View </div>
+				<div class="sidewalk-view-expand" onclick="toggleExpandedSidewalkView(event)">
+					<img class="expanded" src="content/images/arrow-collapse.png" title="Collapse Sidewalk View" />
+					<img class="collapsed" src="content/images/arrow-expand.png" title="Expand Sidewalk View" />
+				</div>
+			</div>
+			
+			<div class="tab walkspan-area-tabs">
+				<button class="tab-link tab-quarter-mile selected" onclick="selectArea(event, 'quarter-mile')"> 
+					<span class="tab-title"> Quarter Mile </span>
+					<span class="tab-score"> 3 </span>
+				</button>
+				<button class="tab-link tab-half-mile" onclick="selectArea(event, 'half-mile')"> 
+					<span class="tab-title"> Half Mile </span> 
+					<span class="tab-score"> 3 </span>
+				</button>
+				<button class="tab-link tab-neighborhood" onclick="selectArea(event, 'neighborhood')"> 
+					<span class="tab-title"> Neighborhood </span>
+					<span class="tab-score"> 3 </span>
+				</button>
+			</div>
+		</div>
+		
+		<div class="walkspan-left-panel feature-panel">
+			
+			<div class="walkability-features-title"> Walkability Features </div>
+			
+			<div class="walkability-feature" onclick="selectLayer(event, 'beauty_n')"
+				description="The natural beauty measure is the extent trees are present along the sidewalks. The more trees there are on a given block, the more sense of natural beauty it evokes.">
+				<div class="walkability-feature-image">
+					<img src="content/images/metrics/nature-faded.png" />
+				</div>
+				<div class="walkability-feature-name">
+					Nature
+				</div>
+			</div>
+			
+			<div class="walkability-feature" onclick="selectLayer(event, 'beauty_m')"
+				description="Architecture measures the display of iconic buildings. It also uses historic district data, building year, landmarks, plazas, churches, and open space.">
+				<div class="walkability-feature-image">
+					<img src="content/images/metrics/architecture-faded.png" />
+				</div>
+				<div class="walkability-feature-name">
+					Architecture
+				</div>
+			</div>
+			
+			<div class="walkability-feature" onclick="selectLayer(event, 'amenities')"
+				description="Wifi hotspots and land use data define the diversity of building edges - the more mixed presence of commerce, residential, open space, culture and institutional there are in a given block, the higher its utility value.">
+				<div class="walkability-feature-image">
+					<img src="content/images/metrics/use-faded.png" />
+				</div>
+				<div class="walkability-feature-name">
+					Shops
+				</div>
+			</div>
+			
+			<div class="walkability-feature" onclick="selectLayer(event, 'interest')"
+				description="This walkability dimension means pedestrian space worth looking at.  We extracted all points of interest in most tourist maps as well as cultural, educational and art destinations.">
+				<div class="walkability-feature-image">
+					<img src="content/images/metrics/interest-faded.png" />
+				</div>
+				<div class="walkability-feature-name">
+					Interest
+				</div>
+			</div>
+			
+			<div class="walkability-feature" onclick="selectLayer(event, 'comfort')"
+				description="Street furniture like benches for resting, trees for shading and sidewalk widths were used to determine comfort. Data available from open source include bus stop seats and park benches.">
+				<div class="walkability-feature-image">
+					<img src="content/images/metrics/comfort-faded.png" />
+				</div>
+				<div class="walkability-feature-name">
+					Comfort
+				</div>
+			</div>
+			
+			<div class="walkability-feature" onclick="selectLayer(event, 'safety')"
+				description="Information on felony reports and accidents make up the rating of sidewalk safety.  A high score is assigned to blocks with no traffic or crime incidents and a low score assigned to intersections with more than 50 felony reports or more than three accident reports.">
+				<div class="walkability-feature-image">
+					<img src="content/images/metrics/safety-faded.png" />
+				</div>
+				<div class="walkability-feature-name">
+					Safety
+				</div>
+			</div>
+			
+			<div class="walkability-feature" onclick="selectLayer(event, 'access')"
+				description="Multiple modes of transport to get to where one wants to walk. Transit access within ¼ mile of bus, bike and subway offer an interconnected and adaptive transport environment. This dimension measures high if a block is near a bus stop or subway station.">
+				<div class="walkability-feature-image">
+					<img src="content/images/metrics/access-faded.png" />
+				</div>
+				<div class="walkability-feature-name">
+					Access
+				</div>
+			</div>
+			
+			<div class="walkability-feature walkability-feature-total selected" onclick="selectLayer(event, 'total')"
+				description="The total of all the walkability metrics.">
+				<div class="walkability-feature-image">
+					<img src="content/images/metrics/total-faded.png" />
+				</div>
+				<div class="walkability-feature-name">
+					Total
+				</div>
+			</div>		
+		</div>
+			
+		<div class="walkspan-left-panel about-panel">
+			<div class="feature-description-header"> 
+				About Total
+			</div>
+			<div class="feature-description-content">
+				The total of all the walkability metrics.
+			</div>
+		</div>
+			
+		<div class="walkspan-left-panel legend-panel">
+			<div class="score-legend score-header">
+				<div> Score </div>
+				<div> Presence </div>
+				<div> Color </div>
+			</div>
+			<div class="score-legend score-3">
+				<div> 3 </div>
+				<div> 66-100% </div>
+				<div>
+					<div class="score-bubble"></div>
+				</div>
+			</div>
+			<div class="score-legend score-2">
+				<div> 2 </div>
+				<div> 36-65% </div>
+				<div>
+					<div class="score-bubble"></div>
+				</div>
+			</div>
+			<div class="score-legend score-1">
+				<div> 1 </div>
+				<div> 1-35% </div>
+				<div>
+					<div class="score-bubble"></div>
+				</div>
+			</div>
+			
+			<button type="button" onclick="gotoRequestKey()"
+				class="wapi-button request-walkspan-api-key"> 
+				Request an API key! 
+			</button>
+			
+			<div class="walkspan-bottom-logo"> 
+				<span> &copy;2021 </span>
+				<a href="https://www.walkspan.com/" target="_blank"> Walkspan </a> 
+			</div>
+		</div>
+	</div>
+	
+	<div id="divWAPIMap" class="wapi-map"></div>
+	<!--
+	<div id="divWAPIMapLegend" class="wapi-map-legend">
+		<div class="legend-header">
+			<strong> Category </strong>
+		</div>
+		<div>
+			<div class="legend-circle orange"></div>
+			<div class="legend-label"> Food </div>
+		</div>
+			<div><div class="legend-circle pink"></div>
+			<div class="legend-label"> Stores </div>
+		</div>
+			<div><div class="legend-circle blue"></div>
+			<div class="legend-label"> Transit </div>
+		</div>
+			<div><div class="legend-circle yellow"></div>
+			<div class="legend-label"> Health </div>
+		</div>
+			<div><div class="legend-circle green"></div>
+			<div class="legend-label"> Public Services </div>
+		</div>
+			<div><div class="legend-circle grey"></div>
+			<div class="legend-label"> Others </div>
+		</div>
+	</div>
+	-->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOXYeVd2IW4rON6FTyLBesJOG87NE3BJo&libraries=geometry,places" defer></script>
+	<script type="text/javascript" src="js/walkspan-api.js?v=1055"></script>
+	
+</BODY>
+</HTML>

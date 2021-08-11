@@ -1,0 +1,120 @@
+<!doctype html>
+<HTML lang="en">
+<HEAD>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="widdiv=device-widdiv, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="audivor" content="">
+	
+	<link href="../content/css/font-awesome-4.7.0.min.css" rel="stylesheet" />
+	<link href="../content/css/bootstrap-4.1.1.min.css" rel="stylesheet" />
+	<link href="../content/css/walkspan-api-dashboard.css?v=10055" rel="stylesheet" />
+	
+</HEAD>
+<BODY>
+	
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<a class="navbar-brand" href="#"> Walkspan API </a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" 
+			aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="javascript:void(0);"> 
+						<i class="fa fa-dashboard"></i>
+						<span> Admin Dashboard </span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="request-key.html"> 
+						<i class="fa fa-user-circle-o"></i>
+						<span> New API User </span>
+					</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<div class="nav-username"> 
+					<i class="fa fa-user-o"></i>
+					<span> Guest </span>
+				</div>
+				<button type="button" class="btn btn-outline-success my-2 my-sm-0" 
+					onclick="gotoMainView()"> 
+					<i class="fa fa-sign-out"></i>
+					<span> Logout  </span>
+				</button>
+			</form>
+		</div>
+	</nav>
+
+	<main role="main" class="container walkspan-api-dashboard">
+		
+		<div class="walkspan-api-dashboard-page-header">
+			<h4> WALKSPAN ADMIN DASHBOARD </h4>
+			<h5> User Management </h5>
+		</div>
+		
+			<div id="divAdminDashboard">
+				<div class="user-header-row">
+					<div> &nbsp; </div>
+					<div> Organization </div>
+					<div> Name </div>
+					<div> Email </div>
+					<div> Email Verified </div>
+					<div> Approved </div>
+					<div> Enabled </div>
+					<div> API Calls </div>
+					<div> Actions </div>
+				</div>
+				<div class="row-template hidden">
+					<div scope="row"> 1 </div>
+					<div> Test Org </div>
+					<div> John </div>
+					<div> test48_0394@test.com </div>
+					<div> Yes </div>
+					<div> Yes </div>
+					<div> Yes </div>
+					<div> 471 </div>
+					<div>
+						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="hidden">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="BT93DETU7URRU">
+							<input type="image" src="https://www.senseofwalk.com/walkspan-api/content/images/buy-key-button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</form>
+						<!--
+						<button type="button" class="btn btn-success buy-user-key-button">
+							<span> Buy Key </span>
+						</button>
+						-->
+						<button type="button" class="btn btn-light generate-user-key-button hidden">
+							<i class="fa fa-key"></i>
+							<span> Generate Key </span>
+						</button>
+						<button type="button" class="btn btn-light show-user-keys-button hidden">
+							<i class="fa fa-key"></i>
+							<span> Keys </span>
+						</button>
+						<button type="button" class="btn btn-danger disable-user-button">
+							<i class="fa fa-remove"></i>
+							<span> Disable </span>
+						</button>
+					</div>
+				</div>
+			</table>
+			<div id="divAdminDashboardLoader">
+				<img src="../content/images/ajax-loader2.gif" />
+			</div>
+		</div>
+		
+	</main>
+
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-4.1.1.min.js"></script>
+	<script type="text/javascript" src="../js/walkspan-dashboard.js?v=10055"></script>
+	
+</BODY>
+</HTML>

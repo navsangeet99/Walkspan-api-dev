@@ -1,0 +1,134 @@
+
+body {
+	height: calc(100% - 56px);
+}
+
+.hidden {
+	display: none;
+}
+
+button, .button-form {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.nav-username {
+	color: #FFF;
+	display: none;
+	margin: 0 20px 0 0;
+}
+
+.nav-username > i {
+	margin: 0 2px 0 0;
+}
+
+.walkspan-api-dashboard {
+	margin-top: 56px;
+    padding-top: 15px;	
+}
+
+.walkspan-api-dashboard-page-header {
+	border-bottom: 1px solid #DDD; 
+	margin: 15px 0 30px 0;
+}
+
+.walkspan-api-dashboard-page-header h5 {
+	color: #858585;
+}
+
+#divAdminDashboard { 
+	display: table;
+}
+
+#divAdminDashboard .user-header-row {
+	display: table-row;
+	font-weight: bold;
+}
+
+#divAdminDashboard .user-header-row > div { 
+	border-bottom: 2px solid #CCC;
+	display: table-cell;
+	padding: 4px;
+}
+
+#divAdminDashboard .user-header-row > div:nth-of-type(1) { width: 5%; }
+#divAdminDashboard .user-header-row > div:nth-of-type(2) { width: 15%; }
+#divAdminDashboard .user-header-row > div:nth-of-type(3) { width: 15%; }
+#divAdminDashboard .user-header-row > div:nth-of-type(4) { width: 10%; }
+#divAdminDashboard .user-header-row > div:nth-of-type(5) { width: 10%; }
+#divAdminDashboard .user-header-row > div:nth-of-type(6) { width: 10%; }
+#divAdminDashboard .user-header-row > div:nth-of-type(7) { width: 10%; }
+#divAdminDashboard .user-header-row > div:nth-of-type(8) { width: 10%; }
+#divAdminDashboard .user-header-row > div:nth-of-type(9) { 
+	min-width: 200px;
+	text-align: center;
+	white-space: nowrap;
+	width: 15%; 
+}
+
+#divAdminDashboard .user-row {
+	display: table-row;
+}
+
+#divAdminDashboard .user-row:hover > div {
+	background-color: #EEF;
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#divAdminDashboard .user-row:last-of-type > div {
+	border-bottom: 0;
+}
+
+#divAdminDashboard .user-row > div {
+	border-bottom: 1px solid #CCC;
+	display: table-cell;
+	padding: 4px;
+}
+
+#divAdminDashboard .user-row > div:nth-of-type(1) { width: 5%; }
+#divAdminDashboard .user-row > div:nth-of-type(2) { width: 15%; }
+#divAdminDashboard .user-row > div:nth-of-type(3) { width: 16%; }
+#divAdminDashboard .user-row > div:nth-of-type(4) { width: 10%; }
+#divAdminDashboard .user-row > div:nth-of-type(5) { width: 10%; }
+#divAdminDashboard .user-row > div:nth-of-type(6) { width: 10%; }
+#divAdminDashboard .user-row > div:nth-of-type(7) { width: 10%; }
+#divAdminDashboard .user-row > div:nth-of-type(8) { width: 10%; }
+#divAdminDashboard .user-row > div:nth-of-type(9) { 
+	min-width: 200px;
+	text-align: center;
+	width: 15%; 
+}
+
+#divAdminDashboardLoader {
+	display: none;
+    height: 32px;
+    margin: 0 auto;
+	width: 32px;
+}
+
+.user-key-row {
+	font-size: 14px;
+	position: relative;
+}
+
+.delete-key-button {
+	border-radius: 20px;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 0 0 12px;
+	padding: 3px 8px;
+}
+
+.delete-key-button:hover {
+	background-color: #DDD;
+}
+
+.generate-user-key-button {
+	margin-right: 8px;
+}
+
+

@@ -1,0 +1,56 @@
+
+body, html {
+	height: calc(100%);
+}
+
+.walkspan-api-request-key { }
+
+.walkspan-api-request-key .request-key-card {
+	margin: 0 auto;
+	width: 56%;
+}
+
+.request-key-title {
+	border-bottom: 1px solid #EEF1F5;
+	color: #5C9BD1 !important;
+	font-size: 16px;
+	margin: 0 0 15px 0;
+	padding: 0 0 10px 0;
+	text-transform: uppercase;
+}
+
+.request-key-row {
+	margin: 0 0 14px 0;
+}
+
+.request-key-row > label {
+	color: #606060;
+	display: block;
+	font-size: 15px;
+	margin: 4px 0 2px 0;
+}
+
+.request-key-row > input[type="password"],
+.request-key-row > input[type="text"] {
+	border: 1px solid #C2CAD8;
+	color: #4040F0;
+	display: block;
+	font-size: 18px;
+	outline: 0 !important;
+    padding: 4px 6px;
+    width: 100%;
+}
+
+.request-key-row > input[type="password"]:focus,
+.request-key-row > input[type="text"]:focus {
+	border: 1px solid #93A1BB !important;
+}
+
+.request-key-divider {
+	border: 0; 
+	border-collapse: collapse; 
+	border-top: 1px solid #EEF1F5; 
+	height: 1; 
+	margin: 15px 0;
+}
+

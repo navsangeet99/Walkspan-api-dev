@@ -1,0 +1,51 @@
+<!doctype html>
+<HTML lang="en">
+<HEAD>
+	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+	<link href="../content/css/walkspan-api-login.css?v=10055" rel="stylesheet" />
+	<link href="../content/css/font-awesome-4.7.0.min.css" rel="stylesheet" />
+	<link href="../content/css/bootstrap-4.1.1.min.css" rel="stylesheet" />
+	
+</HEAD>
+<BODY>
+	
+	<img src="../content/images/logo.png" class="walkspan-api-logo" />
+	
+	<div class="walkspan-api-login">
+		<div class="title">
+			Welcome to the Walkspan API Admin Dashboard
+		</div>
+		<div class="login-controls">
+			<input type="text" id="txtUsername" placeholder="Enter Username" />
+			<input type="password" id="txtPassword" placeholder="Enter Password" />
+			<button type="button" id="btnLogin" onclick="loginUser()"
+					class="btn btn-light login-button">
+				<i class="fa fa-sign-in"></i>
+				<span> LOGIN </span>
+			</button>
+		</div>
+		<div class="auth-error"></div>
+	</div>
+	<div class="walkspan-api-login" style="text-align: center;">
+		<button type="button" class="btn btn-light request-key-button" 
+				onclick="window.location.href='request-key.html';">
+			Request an API Key
+		</button>
+		<button type="button" class="btn btn-light activation-button" 
+				onclick="window.location.href='activation.html';">
+			Enter Activation Code
+		</button>
+		<a href="https://www.senseofwalk.com/walkspan-api" class="back-to-api-link"> Back to API </a>
+	</div>
+	
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-4.1.1.min.js"></script>
+	<script type="text/javascript" src="../js/auth.js?v=10055"></script>
+	
+</BODY>
+</HTML>

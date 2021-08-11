@@ -1,0 +1,106 @@
+
+body {
+	background-color: #CBCBCB !important; /* #5C97BD */
+	color: #FFF !important;
+}
+
+button.in-progress {
+	background: url('../images/ajax-loader2.gif');
+	background-color: #E8E8E8 !important;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 0;
+	color: transparent !important;
+	cursor: disabled;
+	outline: none;
+}
+
+.walkspan-api-logo {
+	display: block; 
+	margin: 9% auto 0 auto;
+	max-height: 150px;
+}
+
+.walkspan-api-login {
+	margin: 40px auto;
+	width: 400px;
+}
+
+.walkspan-api-login .title {
+	font-size: 18px;
+	margin: 0 0 16px 0;	
+    position: relative;
+    top: -24px;
+}
+
+.walkspan-api-login .subtitle {
+	color: #C9DCE9;
+	font-size: 17px;
+	font-weight: 300 !important;
+	margin: 0 0 22px 0;
+	padding-left: 10px;
+}
+
+.login-controls {
+	text-align: center;
+}
+
+.login-controls input[type="password"],
+.login-controls input[type="text"] {
+	background-color: #FFF;
+    border: 1px solid #BBB;
+    color: #808080;
+	height: 43px;
+	padding: 6px 12px;
+}
+
+.walkspan-api-login .login-controls button,
+.walkspan-api-login .login-controls input[type="password"], 
+.walkspan-api-login .login-controls input[type="text"] {
+	margin: 0 0 14px 0;
+	width: 100%;
+}
+
+.login-button {
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: 2px solid #757575 !important;
+	border-radius: 0 !important;
+	color: #757575 !important;
+	font-size: 18px !important;
+	margin: 18px 0 0 0 !important;
+	max-width: 172px;
+}
+
+.login-button > i {
+	font-size: 22px;
+    left: -2px;
+    position: relative;
+    top: 1px;
+}
+
+.activation-button,
+.request-key-button {
+    display: inline-block;
+	background-color: #F1592A !important;
+	border: 1px solid #72A9CC !important;
+	border-radius: 0 !important;
+    color: #FFF !important;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 5px 0 0 0;
+    padding: 10px 25px!important;
+}
+
+.login-button:hover {
+    background-color: #757575 !important;
+    border-color: #757575 !important;
+	color: #FFF !important;
+}
+
+.back-to-api-link {
+	color: #FFF;
+	position: relative; 
+	text-decoration: none;
+	top: 24px;
+}
+
